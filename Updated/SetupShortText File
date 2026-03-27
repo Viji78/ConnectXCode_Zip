@@ -1,0 +1,19 @@
+Created SETUP_GUIDE.md and added it to the zip. On another device:
+
+Quick start:
+
+Extract the zip
+yarn install
+Check firebase.config.ts has correct credentials
+npx expo start --go → scan QR with Expo Go
+Build APK:
+
+npm install -g eas-cli
+eas login
+eas build --profile preview --platform android
+Key things to check:
+
+firebase.config.ts — Firebase API keys
+google-services.json — Android Firebase config
+app.json — package name, permissions
+Node.js v18+ and Yarn installed
